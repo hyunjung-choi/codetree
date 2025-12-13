@@ -6,6 +6,6 @@ fun main() {
     val water = br.readLine().toInt()
 
     if (water < 0) println("ice")
-    else if (water > 100) println("vapor")
+    else if (water >= 100) println("vapor")
     else println("water")
 }
