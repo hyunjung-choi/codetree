@@ -2,6 +2,6 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
-    val (a, b, c) = readLine().split(" ").map { it.toInt() }
+    val (a, b, c) = readLine().trim().split(Regex("\\s+")).map { it.toInt() }
     println(maxOf(a, b, c))
 }
